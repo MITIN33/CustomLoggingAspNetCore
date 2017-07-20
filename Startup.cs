@@ -65,12 +65,11 @@ namespace NetCore_Identity
             //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             //loggerFactory.AddDebug();
 
-            loggerFactory.AddProvider(new ColoredConsoleLoggerProvider(new ColoredConsoleLoggerConfiguration
+            loggerFactory.AddColoredConsoleLogger(c=>
             {
-                LogLevel = LogLevel.Information,
-                Color = ConsoleColor.White
-
-            }));
+                c.LogLevel = LogLevel.Information;
+                c.Color = ConsoleColor.White;
+            });
 
             if (env.IsDevelopment())
             {

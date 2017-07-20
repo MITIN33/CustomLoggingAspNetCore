@@ -71,6 +71,16 @@ namespace NetCore_Identity
                 Color = ConsoleColor.White
 
             }));
+            
+            /*  You can use the extension method also to configure logging
+            
+            loggerFactory.AddColoredConsoleLogger(c=>
+            {
+                c.LogLevel = LogLevel.Information;
+                c.Color = ConsoleColor.White;
+            });
+            
+            */
 
             if (env.IsDevelopment())
             {

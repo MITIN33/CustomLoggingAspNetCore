@@ -10,3 +10,6 @@
             });
 3. You can modify the class as per your requirement.
 4. Remember you need to redeploy your code to Azure web app after making these changes.
+5. You will see logging generated in the below format.
+
+![Alt text](././logging.PNG "Optional Title")
